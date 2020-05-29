@@ -9,7 +9,7 @@ exports.mostrarViajes = async (req, res) => {
 }
 
 exports.mostrarViaje = async (req, res) => {
-    const viaje = await Viaje.findByPk(req.params.id)
+    const viaje = await Viaje.findByPk(req.params.id);
     res.render('viaje', {
         viaje
     });
